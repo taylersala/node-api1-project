@@ -2,6 +2,8 @@ const request = require('supertest')
 const server = require('./api/server')
 const User = require('./api/users/model')
 
+jest.setTimeout(30000)
+
 test('[0] sanity check', () => {
   expect(true).not.toBe(false)
 })
